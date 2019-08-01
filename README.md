@@ -1,21 +1,16 @@
-适用于 Typecho
+![预览图](cover.png)
 
-> Cat UI 将永远维护
+<h1 align="center"><a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a></h1>
 
-## 前言
-Waiting for the people who is angel to me.
+> 一个移植 https://github.com/nexmoe/hexo-theme-nexmoe 的 typecho 主题
 
-## 展示站点
-欢迎使用本模板后在评论区提供展示链接。
-
-## 自定义文章头图
-需要先在 后台 → 设置外观 → 喵咪の主人 的Cover模式 中启用 `自定义Cover`
-然后在编辑文章中的 `自定义字段` 内可设置
-
-## 预览图
-
-![psb (1).jpg](https://i.loli.net/2018/04/22/5adb68b4800c3.jpg)
-
-![Snipaste_2018-04-21_22-55-36.png](https://i.loli.net/2018/04/22/5adb68b70e5c9.png)
-
-![Snipaste_2018-04-21_23-51-17.png](https://i.loli.net/2018/04/22/5adb68b72db00.png)
+<p align="center">
+<img alt="star" src="https://img.shields.io/github/stars/nexmoe/hexo-theme-nexmoe.svg"/>
+<img alt="fork" src="https://img.shields.io/github/forks/nexmoe/hexo-theme-nexmoe.svg"/>
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/nexmoe/hexo-theme-nexmoe.svg?label=commits">
+<img alt="issues" src="https://img.shields.io/github/issues/nexmoe/hexo-theme-nexmoe.svg"/>
+<a href="https://nexmoe.com"><img alt="Author" src="https://img.shields.io/badge/author-%E6%8A%98%E5%BD%B1%E8%BD%BB%E6%A2%A6-red.svg"/></a>
+<a href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/LICENSE"><img alt="license" src="https://img.shields.io/github/license/nexmoe/hexo-theme-nexmoe.svg"/></a>
+<img alt="hexo" src="https://img.shields.io/badge/hexo-blue.svg"/>
+<img alt="Download" src="https://img.shields.io/badge/download-29.9KB-brightgreen.svg"/>
+</p>
