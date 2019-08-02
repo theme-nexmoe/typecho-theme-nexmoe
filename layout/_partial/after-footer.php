@@ -1,15 +1,16 @@
-<script src="<%- theme.cdn.mdui.js %>"></script>
-<script src="<%- theme.cdn.jquery.js %>"></script>
+<script src="<?php echo $this->options->mdui_js ?>"></script>
+<script src="<?php echo $this->options->jquery_js ?>"></script>
 <% if(theme.function.fancybox == true) { %> 
-    <script src="<%- theme.cdn.fancybox.js %>"></script>
-<% } %>
+<?php if (!empty($this->options->function) && in_array('fancybox', $this->options->function)): ?>
+<script src="<?php echo $this->options->fancybox_js ?>"></script>
+<?php endif; ?>
 
-<% if(theme.function.SmoothScroll == true) { %> 
-    <script src="<%- theme.cdn.SmoothScroll.js %>"></script>
-<% } %>
+<?php if (!empty($this->options->function) && in_array('SmoothScroll', $this->options->function)): ?>
+<script src="<?php echo $this->options->SmoothScroll_js ?>"></script>
+<?php endif; ?>
 
-<%- js('js/highlight.pack') %>
+<script src="<?php echo $this->options->highlight_js ?>"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<%- js_auto_version('js/app') %>
-<script src="<%- theme.cdn.lazysizes.js %>"></script>
+<script src="<?php $this->options->themeUrl('source/js/app.js'); ?>"></script>
+<script src="<?php echo $this->options->lazysizes_js ?>"></script>

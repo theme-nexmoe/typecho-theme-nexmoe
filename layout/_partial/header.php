@@ -37,9 +37,5 @@
         <?php endif;?>
     </ul>
     <%- partial('_partial/sidebar') %>
-    <div class="nexmoe-copyright">
-        &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
-        <%= __('Powered by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
-        & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe <?php echo getThemeInfo("version") ?></a>
-    </div>
+    <div class="nexmoe-copyright">© 2019 折影轻梦 Powered by <a href="http://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> &amp; <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a></div>
 </div><!-- .nexmoe-drawer -->

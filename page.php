@@ -21,7 +21,7 @@ $this->need('layout/_partial/head.php');
                 <?php if ($this->fields->Cover){ ?>
                     <img src="<?php echo $this->fields->Cover ?>">
                 <?php }  else{ ?>
-                    <img src="<?php echo $this->options->background ?> ?>">
+                    <img src="<?php echo $this->options->background ?>">
                 <?php } ?>
                 <h1><?php $this->title() ?></h1>
             </div>
@@ -40,7 +40,7 @@ $this->need('layout/_partial/head.php');
         
     </div>
   </div>
-  <?php $this->need('footer.php'); ?>
+  <?php $this->need('layout/_partial/after-footer.php'); ?>
 </body>
 
 </html>

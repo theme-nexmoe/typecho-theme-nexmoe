@@ -9,8 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="shortcut icon" href="/favicon.ico">
         <link rel="apple-touch-icon" href="<?php $this->options->logoUrl();?>">
-        <link rel="stylesheet" href="//cdn.bootcss.com/mdui/0.4.0/css/mdui.min.css">
-        <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.8.0/styles/monokai-sublime.min.css">
+        <link rel="stylesheet" href="<?php echo $this->options->mdui_css ?>">
+        <link rel="stylesheet" href="<?php echo $this->options->highlight_css ?>">
         <link rel="stylesheet" href="<?php $this->options->themeUrl('source/css/style.css'); ?>">
         <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
         <?php $this->header('generator=&template=&pingback=&xmlrpc=&wlw=&commentReply=&rss1=&rss2=&atom='); ?>
