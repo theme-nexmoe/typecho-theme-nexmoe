@@ -30,5 +30,5 @@
         <?php endif;?>
     </ul>
     <?php $this->need('layout/_partial/sidebar.php'); ?>
-    <div class="nexmoe-copyright">© <?php echo date("Y") ?> <?php $this->options->title(); ?> Powered by <a href="http://typecho.org/" target="_blank" rel="external nofollow noopener noreferrer">Typecho</a> &amp; <a href="https://github.com/nexmoe/hexo-theme-nexmoe" target="_blank" rel="external nofollow noopener noreferrer">Nexmoe</a></div>
+    <div class="nexmoe-copyright">© <?php echo date("Y") ?> <?php $this->options->title(); ?> Powered by <a href="http://typecho.org/" target="_blank" rel="external nofollow noopener noreferrer">Typecho</a> &amp; <a href="https://github.com/nexmoe/typecho-theme-nexmoe" target="_blank" rel="external nofollow noopener noreferrer">Nexmoe</a></div>
 </div><!-- .nexmoe-drawer -->
