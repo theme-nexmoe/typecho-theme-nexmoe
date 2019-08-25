@@ -15,13 +15,6 @@
             <i class="mdui-list-item-icon nexmoefont icon-home"></i>
             <div class="mdui-list-item-content">回到首页</div>
         </a>
-        <?php $this->widget('Widget_Metas_Category_List')->to($mates); ?>
-        <?php while($mates->next()): ?>
-            <a class="<?php if($this->is('category', $mates->slug) or $this->is('category', $mates->name)): ?>active <?php endif; ?>nexmoe-list-item mdui-list-item mdui-ripple" href="<?php $mates->permalink(); ?>" title="<?php $mates->name(); ?>">
-                <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
-                <div class="mdui-list-item-content"><?php $mates->name(); ?></div>
-            </a>
-        <?php endwhile; ?>
         <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
         <?php while($pages->next()): ?>
             <a class="<?php if($this->is('page', $pages->slug)): ?>active <?php endif; ?>nexmoe-list-item mdui-list-item mdui-ripple" href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>">
@@ -36,6 +29,6 @@
         </a>
         <?php endif;?>
     </ul>
-    <%- partial('_partial/sidebar') %>
-    <div class="nexmoe-copyright">© 2019 折影轻梦 Powered by <a href="http://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> &amp; <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a></div>
+    <?php $this->need('layout/_partial/sidebar.php'); ?>
+    <div class="nexmoe-copyright">© <?php echo date("Y") ?> <?php $this->options->title(); ?> Powered by <a href="http://typecho.org/" target="_blank" rel="external nofollow noopener noreferrer">Typecho</a> &amp; <a href="https://github.com/nexmoe/hexo-theme-nexmoe" target="_blank" rel="external nofollow noopener noreferrer">Nexmoe</a></div>
 </div><!-- .nexmoe-drawer -->

@@ -34,7 +34,9 @@ $this->need('layout/_partial/head.php');
             <article>
                 <?php $this->content(''); ?>
             </article>
-            <?php $this->need('comments.php'); ?>
+            <div id="comments">
+                <?php $this->need('comments.php'); ?>
+            </div>
         </div>
         
         

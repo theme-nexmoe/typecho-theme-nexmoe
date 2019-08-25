@@ -3,7 +3,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 $this->need('layout/_partial/head.php'); 
 ?>
 <body class="mdui-drawer-body-left">
-  <div class="nexmoe-bg" style="background-image: url(<?php echo $options->background ?>)"></div>
+  <div class="nexmoe-bg" style="background-image: url(<?php echo $this->options->background ?>)"></div>
   <div id="nexmoe-header">
       <?php $this->need('layout/_partial/header.php'); ?>
   </div>
@@ -36,7 +36,9 @@ $this->need('layout/_partial/head.php');
             <article>
                 <?php $this->content(''); ?>
             </article>
-            <?php $this->need('comments.php'); ?>
+            <div id="comments">
+                <?php $this->need('comments.php'); ?>
+            </div>
         </div>
         
         
