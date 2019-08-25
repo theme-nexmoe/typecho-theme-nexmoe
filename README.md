@@ -13,3 +13,24 @@
 <a href="https://github.com/nexmoe/typecho-theme-nexmoe/blob/master/LICENSE"><img alt="license" src="https://img.shields.io/github/license/nexmoe/typecho-theme-nexmoe.svg"/></a>
 <img alt="hexo" src="https://img.shields.io/badge/typecho-blue.svg"/>
 </p>
+
+## 教程
+暂无
+
+## 演示
+
+- [折影轻梦](https://typecho-nexmoe.nexmoe.com/)
+
+欢迎将你的网站提交到这里来
+
+## 其他博客程序
+ - Hexo：https://github.com/nexmoe/hexo-theme-nexmoe
+
+## 许可证
+
+根据 Apache License 2.0 许可证开源。
+
+## 后续更新
+就读高中，
+star 以及 issue 是我更新的动力!
+欢迎加群 [482634342 轻惋漫社](https://jq.qq.com/?_wv=1027&k=5CfKHun) 划水
