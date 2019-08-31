@@ -19,7 +19,7 @@
 
 ## 演示
 
-- [折影轻梦](https://typecho-nexmoe.nexmoe.com/)
+- [奈西萌](https://i.nexmoe.com)
 
 欢迎将你的网站提交到这里来
 
