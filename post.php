@@ -3,18 +3,12 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 $this->need('layout/_partial/head.php'); 
 ?>
 <body class="mdui-drawer-body-left">
-  <div class="nexmoe-bg" style="background-image: url(<?php echo $this->options->background ?>)"></div>
+      <?php $this->need('layout/_partial/background.php'); ?>
   <div id="nexmoe-header">
       <?php $this->need('layout/_partial/header.php'); ?>
   </div>
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
-        <div class="nexmoe-tab">
-            <a mdui-drawer="{target: '#drawer', swipe: true}">
-              <i class="mdui-icon material-icons">menu</i>
-            </a>
-        </div>
-    
     
         <div class="nexmoe-post">
             <div class="nexmoe-post-cover mdui-ripple"> 
