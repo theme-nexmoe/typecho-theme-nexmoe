@@ -1,6 +1,6 @@
 <script src="<?php echo $this->options->mdui_js ?>"></script>
 <script src="<?php echo $this->options->jquery_js ?>"></script>
-<% if(theme.function.fancybox == true) { %> 
+
 <?php if (!empty($this->options->function) && in_array('fancybox', $this->options->function)): ?>
 <script src="<?php echo $this->options->fancybox_js ?>"></script>
 <?php endif; ?>
