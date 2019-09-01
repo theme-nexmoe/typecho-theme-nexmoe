@@ -14,7 +14,7 @@
 <img alt="hexo" src="https://img.shields.io/badge/typecho-blue.svg"/>
 </p>
 
-## 文档需要贡献！
+## 需要贡献！
 https://docs.nexmoe.com/contribution
 
 ## 演示
