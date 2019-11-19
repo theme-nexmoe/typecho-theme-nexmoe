@@ -1,6 +1,6 @@
-<?php 
+<?php
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
-$this->need('layout/_partial/head.php'); 
+$this->need('layout/_partial/head.php');
 ?>
 <body class="mdui-drawer-body-left">
       <?php $this->need('layout/_partial/background.php'); ?>
@@ -9,9 +9,9 @@ $this->need('layout/_partial/head.php');
   </div>
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
-    
+
         <div class="nexmoe-post">
-            <div class="nexmoe-post-cover mdui-ripple"> 
+            <div class="nexmoe-post-cover mdui-ripple">
                 <?php if ($this->fields->Cover){ ?>
                     <img src="<?php echo $this->fields->Cover ?>">
                 <?php }  else{ ?>
@@ -34,8 +34,6 @@ $this->need('layout/_partial/head.php');
                 <?php $this->need('comments.php'); ?>
             </div>
         </div>
-        
-        
     </div>
   </div>
   <?php $this->need('layout/_partial/after-footer.php'); ?>

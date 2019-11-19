@@ -10,13 +10,14 @@ function themeConfig($form) {
     $form->addInput ($logoUrl);
     $background = new Typecho_Widget_Helper_Form_Element_Text('background',NULL,'https://nexmoe.com/images/5c3aec85a4343.jpg','博客默认封面图','在这里填入一个图片URL地址, 给博客添加一个默认封面图');
     $form->addInput ($background);
-    
+
     $widget = new Typecho_Widget_Helper_Form_Element_Textarea('widget',NULL,'category,tagcloud,archive','侧边栏部件','侧边栏部件，用英文的 “,” 隔开，按先后排序，可选值 category,tagcloud,archive');
     $form->addInput ($widget);
 
     $function = new Typecho_Widget_Helper_Form_Element_Checkbox('function',
         array('fancybox' => '灯箱功能',
-            'SmoothScroll' => '平滑滚动'),
+            'SmoothScroll' => '平滑滚动',
+            'enableMathjax' => '全局启用Mathjax'),
         array('fancybox', 'SmoothScroll'), '功能开关');
     $form->addInput($function->multiMode());
 
@@ -32,13 +33,13 @@ function themeConfig($form) {
     $form->addInput ($fancybox_css);
     $fancybox_js = new Typecho_Widget_Helper_Form_Element_Text('fancybox_js',NULL,'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js','CDN > fancybox > JS',NULL);
     $form->addInput ($fancybox_js);
-    
+
     $SmoothScroll_js = new Typecho_Widget_Helper_Form_Element_Text('SmoothScroll_js',NULL,'https://cdn.jsdelivr.net/npm/smoothscroll-for-websites@1.4.9/SmoothScroll.min.js','CDN > SmoothScroll > JS',NULL);
     $form->addInput ($SmoothScroll_js);
-    
+
     $lazysizes_js = new Typecho_Widget_Helper_Form_Element_Text('lazysizes_js',NULL,'https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js','CDN > lazysizes > JS',NULL);
     $form->addInput ($lazysizes_js);
-    
+
     $highlight_css = new Typecho_Widget_Helper_Form_Element_Text('highlight_css',NULL,'https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css','CDN > highlight > CSS',NULL);
     $form->addInput ($highlight_css);
     $highlight_js = new Typecho_Widget_Helper_Form_Element_Text('highlight_js',NULL,'https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js','CDN > highlight > JS',NULL);
@@ -51,6 +52,8 @@ function themeConfig($form) {
 function themeFields($layout) {
     $Cover = new Typecho_Widget_Helper_Form_Element_Textarea('Cover', NULL, NULL, '自定义缩略图', '输入缩略图地址');
     $layout->addItem($Cover);
+    $math = new Typecho_Widget_Helper_Form_Element_Textarea('math', NULL, NULL, '单独控制Mathjax', '输入Yes启用，No禁用，否则跟随全局');
+    $layout->addItem($math);
 }
 
 function  artCount ($cid) {
