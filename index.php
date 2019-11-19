@@ -47,6 +47,7 @@ $this->need('layout/_partial/head.php');
             <?php endwhile; ?>
         </section>
         
+        <?php $this->need('layout/_partial/paginator.php'); ?>
         
     </div>
   </div>
