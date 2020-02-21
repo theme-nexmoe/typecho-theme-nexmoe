@@ -81,7 +81,7 @@ function themeFields($layout) {
     $math = new Typecho_Widget_Helper_Form_Element_Textarea('math', NULL, NULL, '单独控制Mathjax', '输入Yes启用，No禁用，否则跟随全局');
     $layout->addItem($math);
 }
-/* 文章目录开始 */
+
 function createCatalog($obj) {
     $obj = preg_replace_callback('/<h([1-6])(.*?)>(.*?)<\/h\1>/i', function ($obj) {
         global $catalog;
@@ -131,7 +131,7 @@ function getCatalog() {
     echo $index;
 }
 
-/* 文章目录结束 */
+
 function  artCount ($cid) {
     $db = Typecho_Db::get ();
     $rs = $db->fetchRow ($db->select ('table.contents.text')->from ('table.contents')->where ('table.contents.cid=?',$cid)->order ('table.contents.cid',Typecho_Db::SORT_ASC)->limit (1));
