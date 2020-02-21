@@ -3,6 +3,9 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 function themeInit($archive) {
     Helper::options()->commentsAntiSpam = false;
+    if ($archive->is('single')) {
+    $archive->content = createCatalog($archive->content);
+}
 }
 
 function themeConfig($form) {
@@ -11,7 +14,7 @@ function themeConfig($form) {
     $background = new Typecho_Widget_Helper_Form_Element_Text('background',NULL,'https://nexmoe.com/images/5c3aec85a4343.jpg','博客默认封面图','在这里填入一个图片URL地址, 给博客添加一个默认封面图');
     $form->addInput ($background);
 
-    $widget = new Typecho_Widget_Helper_Form_Element_Textarea('widget',NULL,'category,tagcloud,archive','侧边栏部件','侧边栏部件，用英文的 “,” 隔开，按先后排序，可选值 category,tagcloud,archive,social,search');
+    $widget = new Typecho_Widget_Helper_Form_Element_Textarea('widget',NULL,'category,tagcloud,archive','侧边栏部件','侧边栏部件，用英文的 “,” 隔开，按先后排序，可选值 category,tagcloud,archive,social');
     $form->addInput ($widget);
     
     $bilibili = new Typecho_Widget_Helper_Form_Element_Text('bilibili', NULL, NULL, _t('哔哩哔哩地址'), _t('社交按钮部件-哔哩哔哩'));
@@ -36,7 +39,6 @@ function themeConfig($form) {
         $form->addInput($game); 
         
         
-    
         
     $function = new Typecho_Widget_Helper_Form_Element_Checkbox('function',
         array('fancybox' => '灯箱功能',
@@ -79,7 +81,57 @@ function themeFields($layout) {
     $math = new Typecho_Widget_Helper_Form_Element_Textarea('math', NULL, NULL, '单独控制Mathjax', '输入Yes启用，No禁用，否则跟随全局');
     $layout->addItem($math);
 }
+/* 文章目录开始 */
+function createCatalog($obj) {
+    $obj = preg_replace_callback('/<h([1-6])(.*?)>(.*?)<\/h\1>/i', function ($obj) {
+        global $catalog;
+        global $catalog_count;
+        $catalog_count++;
+        $catalog[] = array('text' => trim(strip_tags($obj[3])), 'depth' => $obj[1], 'count' => $catalog_count);
+        return '<h'.$obj[1].$obj[2].'>'.$obj[3].'</h'.$obj[1].'>';
+    }, $obj);
+    return $obj;
+}
 
+function getCatalog() {
+    global $catalog;
+    $index = '';
+    if ($catalog) {
+        $index = '<ul>' . "\n";
+        $prev_depth = '';
+        $to_depth = 0;
+        foreach ($catalog as $catalog_item) {
+            $catalog_depth = $catalog_item['depth'];
+            if ($prev_depth) {
+                if ($catalog_depth == $prev_depth) {
+                    $index .= '</li>' . "\n";
+                } elseif ($catalog_depth > $prev_depth) {
+                    $to_depth++;
+                    $index .= '<ul>' . "\n";
+                } else {
+                    $to_depth2 = ($to_depth > ($prev_depth - $catalog_depth)) ? ($prev_depth - $catalog_depth) : $to_depth;
+                    if ($to_depth2) {
+                        for ($i = 0; $i < $to_depth2; $i++) {
+                            $index .= '</li>' . "\n" . '</ul>' . "\n";
+                            $to_depth--;
+                        }
+                    }
+                    $index .= '</li>';
+                }
+            }
+            $index .= '<li><a href="#'. $catalog_item['text'] .'">' . $catalog_item['text'] . '</a>';
+            $prev_depth = $catalog_item['depth'];
+        }
+        for ($i = 0; $i <= $to_depth; $i++) {
+            $index .= '</li>' . "\n" . '</ul>' . "\n";
+        }
+       
+            
+    }
+    echo $index;
+}
+
+/* 文章目录结束 */
 function  artCount ($cid) {
     $db = Typecho_Db::get ();
     $rs = $db->fetchRow ($db->select ('table.contents.text')->from ('table.contents')->where ('table.contents.cid=?',$cid)->order ('table.contents.cid',Typecho_Db::SORT_ASC)->limit (1));
@@ -146,7 +198,7 @@ function  cid_info ($cid,$biao) {
  */
 function tagsNum() {
     $db = Typecho_Db::get ();
-    return $db->fetchObject($db->select(array('COUNT(mid)' => 'num'))
+    return $db->fetchobject($db->select(array('COUNT(mid)' => 'num'))
         ->from('table.metas')
         ->where('table.metas.type = ?', 'tag'))->num;
 }
