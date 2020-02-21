@@ -85,35 +85,9 @@ $this->need('layout/_partial/head.php');
                 <?php $this->tags(' ', true); ?>
             </div>
             <article>
-               <?php
-                            $str = preg_replace('#<a href="(.*?)">(.*?)</a>#','<a href="$1" target="_blank" >$2</a>',$this->content);
-                            $str = preg_replace('#\@\((.*?)\)#','<img src="https://nexmoe.com/usr/themes/catui/newpaopao/$1.png" class="biaoqing">',$str);
-                            $str = preg_replace('#<h(.*?)>(.*?)</h(.*?)>#','<h$1 id="$2">$2</h$3>',$str);
-                            $str = preg_replace('#<li><p>\[OPEN\](.*?)</p><ul>(.*?)</ul></li>#','<li><details open><summary><i class="mdui-icon material-icons add">add_circle</i><i class="mdui-icon material-icons remove">remove_circle</i> $1</summary><ul>$2</ul></details></li>',$str);
-                            $str = preg_replace('#<li><p>(.*?)</p><ul>(.*?)</ul></li>#','<li><details><summary><i class="mdui-icon material-icons add">add_circle</i><i class="mdui-icon material-icons remove">remove_circle</i> $1</summary><ul>$2</ul></details></li>',$str);
-                            $str = preg_replace('#<li>(.*?)\[Y\](.*?)</li>#','<li>$1<label class="mdui-checkbox">
-                                <input type="checkbox" disabled checked>
-                                <i class="mdui-checkbox-icon"></i> 
-                                </label><del>$2</del></li>',$str);
-                            $str = preg_replace('#<li>(.*?)\[N\](.*?)</li>#','<li>$1<label class="mdui-checkbox">
-                                <input type="checkbox" disabled><i class="mdui-checkbox-icon"></i></label>$2</li>',$str);
-                            $str = preg_replace('#<p>\[PIC(.*?)\]</p>(.*?)<p>\[/PIC(.*?)\]</p>#','<div class="catui-pic-$1">$2</div>',$str);
-                            $str = preg_replace('#<p><img src="(.*?)"(.*?)title="(.*?)"></p>#','<p title="$3">
-                            <a class="catui-pic" data-fancybox="gallery" href="$1"><img src="$1"$2title="$3"></a></p>',$str);
-                            preg_match_all('/<p>\[PAGE(.*?)\]<\/p>/i',$str,$page);
-                            $str = preg_replace('#<p>\[PAGE(.*?)\]</p>#','<div id="catui-page-$1">',$str);
-                            $str = preg_replace('#<p>\[/PAGE(.*?)\]</p>#','</div>',$str);
-                            echo $str;
-                            if(isset($page[1][1])){
-                                echo '<div class="mdui-tab catui-page" mdui-tab>';
-                                foreach($page[1] as $id){
-                                    echo '<a href="#catui-page-'.$id.'" class="mdui-ripple">'.$id.'</a>';   
-                                }
-                                echo '</div>';
-                            }
-                            ?>
+                <?php $this->content(''); ?>
             </article>
-            <div class="nexmoe-post-right"><div class="nexmoe-fixed"><div class="nexmoe-valign"><div class="nexmoe-toc"><ol class="toc"><?php getCatalog(); ?></ol></div></div></div></div>
+		 <div class="nexmoe-post-right"><div class="nexmoe-fixed"><div class="nexmoe-valign"><div class="nexmoe-toc"><ol class="toc"><?php getCatalog(); ?></ol></div></div></div></div>
             <div id="comments">
                 <?php $this->need('comments.php'); ?>
             </div>
@@ -121,7 +95,7 @@ $this->need('layout/_partial/head.php');
     </div>
   </div>
   <?php $this->need('layout/_partial/after-footer.php'); ?>
-  <script src="<?php echo $this->options->jquery_js ?>"></script>
+	<script src="<?php echo $this->options->jquery_js ?>"></script>
 
 <?php if (!empty($this->options->function) && in_array('fancybox', $this->options->function)): ?>
 <script src="<?php echo $this->options->fancybox_js ?>"></script>
