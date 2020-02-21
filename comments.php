@@ -219,8 +219,7 @@ $comments->alt(' comment-odd', ' comment-even');
     position:absolute;
     right:0;
     top:69px;
-    width:100%;
-    background:#fff;
+
     border-top:1px solid #f5f6f9;
     box-sizing:border-box
 }
@@ -340,6 +339,7 @@ $comments->alt(' comment-odd', ' comment-even');
     font-size:16px;
     word-wrap:break-word;
     float: left;
+    width: 100%;
     margin-bottom: 10px;
 }
 #comments .comment .comment-content .comment-text .catui-gallery {
@@ -356,7 +356,7 @@ $comments->alt(' comment-odd', ' comment-even');
     max-width: 100%;
     border: 1px solid #eee;
     box-sizing: border-box;
-    width: calc(25% - 7.5px);
+
     margin-top: 10px;
 }
 #comments .comment .comment-content .at {
