@@ -11,9 +11,32 @@ function themeConfig($form) {
     $background = new Typecho_Widget_Helper_Form_Element_Text('background',NULL,'https://nexmoe.com/images/5c3aec85a4343.jpg','博客默认封面图','在这里填入一个图片URL地址, 给博客添加一个默认封面图');
     $form->addInput ($background);
 
-    $widget = new Typecho_Widget_Helper_Form_Element_Textarea('widget',NULL,'category,tagcloud,archive','侧边栏部件','侧边栏部件，用英文的 “,” 隔开，按先后排序，可选值 category,tagcloud,archive');
+    $widget = new Typecho_Widget_Helper_Form_Element_Textarea('widget',NULL,'category,tagcloud,archive','侧边栏部件','侧边栏部件，用英文的 “,” 隔开，按先后排序，可选值 category,tagcloud,archive,social');
     $form->addInput ($widget);
-
+    
+    $bilibili = new Typecho_Widget_Helper_Form_Element_Text('bilibili', NULL, NULL, _t('哔哩哔哩地址'), _t('社交按钮部件-哔哩哔哩'));
+    $form->addInput($bilibili); 
+      
+    $github = new Typecho_Widget_Helper_Form_Element_Text('github', NULL, NULL, _t('github地址'), _t('社交按钮部件-github'));
+    $form->addInput($github); 
+        
+    $zhihu = new Typecho_Widget_Helper_Form_Element_Text('zhihu', NULL, NULL, _t('知乎地址'), _t('社交按钮部件-知乎'));
+    $form->addInput($zhihu); 
+        
+     $telegram = new Typecho_Widget_Helper_Form_Element_Text('telegram', NULL, NULL, _t('telegram地址'), _t('社交按钮部件-telegram'));
+        $form->addInput($telegram); 
+        
+     $twitter = new Typecho_Widget_Helper_Form_Element_Text('twitter', NULL, NULL, _t('推特地址'), _t('社交按钮部件-推特'));
+        $form->addInput($twitter); 
+        
+         $steam = new Typecho_Widget_Helper_Form_Element_Text('steam', NULL, NULL, _t('steam地址'), _t('社交按钮部件-steam'));
+        $form->addInput($steam); 
+    
+     $game = new Typecho_Widget_Helper_Form_Element_Text('game', NULL, NULL, _t('游戏ID'), _t('社交按钮部件-游戏ID'));
+        $form->addInput($game); 
+        
+        
+        
     $function = new Typecho_Widget_Helper_Form_Element_Checkbox('function',
         array('fancybox' => '灯箱功能',
             'SmoothScroll' => '平滑滚动',
