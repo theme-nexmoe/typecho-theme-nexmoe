@@ -36,6 +36,7 @@ function themeConfig($form) {
         $form->addInput($game); 
         
         
+    
         
     $function = new Typecho_Widget_Helper_Form_Element_Checkbox('function',
         array('fancybox' => '灯箱功能',
