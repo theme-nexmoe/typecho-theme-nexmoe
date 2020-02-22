@@ -1,7 +1,5 @@
+<script src="<?php echo $this->options->jquery_js ?>"></script>
 <script src="<?php echo $this->options->mdui_js ?>"></script>
-
-
-
 <?php if (!empty($this->options->function) && in_array('SmoothScroll', $this->options->function)): ?>
 <script src="<?php echo $this->options->SmoothScroll_js ?>"></script>
 <?php endif; ?>
