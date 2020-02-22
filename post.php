@@ -95,8 +95,6 @@ $this->need('layout/_partial/head.php');
     </div>
   </div>
   <?php $this->need('layout/_partial/after-footer.php'); ?>
-	<script src="<?php echo $this->options->jquery_js ?>"></script>
-
 <?php if (!empty($this->options->function) && in_array('fancybox', $this->options->function)): ?>
 <script src="<?php echo $this->options->fancybox_js ?>"></script>
 <?php endif; ?>
