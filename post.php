@@ -54,7 +54,9 @@ $this->need('layout/_partial/head.php');
     
 }
 
-
+.hljs {
+    font-family: Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;
+}
 
 </style>
         <link rel="stylesheet" href="<?php echo $this->options->highlight_css ?>">
