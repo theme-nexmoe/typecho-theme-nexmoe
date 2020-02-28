@@ -19,17 +19,17 @@ article ul li {
     overflow: hidden;
 }
 .link-p {
-
-    font-size: 13px;
+ top: 10px;
+    font-size: 15px;
     color: #606266;
     -webkit-transition: none;
     transition: none;
-
+ margin-bottom: 5px;
     display: block;
     position: relative;
     width: 100%;
     border: none;
-
+height:30px;
     margin-top: -2px;
     text-align: center;
     overflow: hidden;
@@ -46,9 +46,12 @@ article ul {
     margin: -5px;
 }
 
-article ul img {
-width:120px;
-height: 110px;
+article ul li img {
+  height:110px;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    display: block;
 }
 @media screen and (max-width: 768px) {
 article ul li {
@@ -70,11 +73,11 @@ article ul li {
             <article>
                             <?php
                             $str = preg_replace('#<li>(.*?)</li>#','<li>$1</li>', $this->content);
-                            $str = preg_replace('#<li>(.*?)<a href="(.*?)">(.*?)</a></li>#','<li>$1<p class="link-p">$3</p></a></li>',$str);
+                          $str = preg_replace('#<li></li>#','<li>$1<a href="$2"><p>$3</p></a>',$str);
                             $str = preg_replace('#<ul>#','<ul>', $str);
                             $str = preg_replace('#</ul>#','</ul>', $str);
                          
-                            $str = preg_replace('#<a href="(.*?)">(.*?)</a>#','<a href="$1" target="_blank" >$2</a>',$str);
+                            $str = preg_replace('#<a href="(.*?)">(.*?)</a>#','<a href="$1" class="link-p" target="_blank" >$2</a>',$str);
                             echo $str;
                             ?>
             </article>
