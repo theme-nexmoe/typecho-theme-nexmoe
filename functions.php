@@ -14,7 +14,7 @@ function themeConfig($form) {
     $background = new Typecho_Widget_Helper_Form_Element_Text('background',NULL,'https://nexmoe.com/images/5c3aec85a4343.jpg','博客默认封面图','在这里填入一个图片URL地址, 给博客添加一个默认封面图');
     $form->addInput ($background);
 
-    $widget = new Typecho_Widget_Helper_Form_Element_Textarea('widget',NULL,'category,tagcloud,archive','侧边栏部件','侧边栏部件，用英文的 “,” 隔开，按先后排序，可选值 category,tagcloud,archive,social');
+    $widget = new Typecho_Widget_Helper_Form_Element_Textarea('widget',NULL,'category,tagcloud,archive','侧边栏部件','侧边栏部件，用英文的 “,” 隔开，按先后排序，可选值 category,tagcloud,archive,social,search');
     $form->addInput ($widget);
     
     $bilibili = new Typecho_Widget_Helper_Form_Element_Text('bilibili', NULL, NULL, _t('哔哩哔哩地址'), _t('社交按钮部件-哔哩哔哩'));
