@@ -18,24 +18,6 @@ article ul li {
 
     overflow: hidden;
 }
-.link-p {
- top: 10px;
-    font-size: 15px;
-    color: #606266;
-    -webkit-transition: none;
-    transition: none;
- margin-bottom: 5px;
-    display: block;
-    position: relative;
-    width: 100%;
-    border: none;
-height:30px;
-    margin-top: -2px;
-    text-align: center;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
 
 article ul {
     list-style-type: none;
@@ -52,6 +34,24 @@ article ul li img {
     border-radius: 0;
     border: none;
     display: block;
+}
+      article ul li a {
+ top: 10px;
+    font-size: 15px;
+    color: #606266;
+    -webkit-transition: none;
+    transition: none;
+ margin-bottom: 5px;
+    display: block;
+    position: relative;
+    width: 100%;
+    border: none;
+height:30px;
+    margin-top: -2px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 @media screen and (max-width: 768px) {
 article ul li {
@@ -77,7 +77,7 @@ article ul li {
                             $str = preg_replace('#<ul>#','<ul>', $str);
                             $str = preg_replace('#</ul>#','</ul>', $str);
                          
-                            $str = preg_replace('#<a href="(.*?)">(.*?)</a>#','<a href="$1" class="link-p" target="_blank" >$2</a>',$str);
+                            $str = preg_replace('#<a href="(.*?)">(.*?)</a>#','<a href="$1"  target="_blank" >$2</a>',$str);
                             echo $str;
                             ?>
             </article>
