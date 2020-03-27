@@ -87,7 +87,11 @@ $this->need('layout/_partial/head.php');
                 <?php $this->tags(' ', true); ?>
             </div>
             <article>
-                <?php $this->content(''); ?>
+               <?php
+$content = preg_replace('#<h(.*?)>(.*?)</h(.*?)>#','<h$1 id="$2">$2</h$3>',$this->content);
+echo $content;
+?>
+
             </article>
 		 <div class="nexmoe-post-right"><div class="nexmoe-fixed"><div class="nexmoe-valign"><div class="nexmoe-toc"><ol class="toc"><?php getCatalog(); ?></ol></div></div></div></div>
             <div id="comments">
