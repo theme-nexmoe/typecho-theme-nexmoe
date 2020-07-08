@@ -20,8 +20,6 @@ https://docs.nexmoe.com/contribution
 ## 演示
 
 - [安和Blog](https://lolicorn.com)
-- [奈西萌](https://i.nexmoe.com)
-
 
 欢迎将你的网站提交到这里来
 
