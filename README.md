@@ -20,6 +20,7 @@ https://docs.nexmoe.com/contribution
 ## 演示
 
 - [安和Blog](https://lolicorn.com)
+- [依玖](https://kukiisama.top/)
 
 欢迎将你的网站提交到这里来
 
@@ -31,6 +32,5 @@ https://docs.nexmoe.com/contribution
 根据 Apache License 2.0 许可证开源。
 
 ## 后续更新
-就读高中，
 star 以及 issue 是我更新的动力!
 欢迎加群 [482634342 轻惋漫社](https://jq.qq.com/?_wv=1027&k=5CfKHun) 划水
