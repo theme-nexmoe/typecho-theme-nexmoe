@@ -27,10 +27,9 @@ https://docs.nexmoe.com/contribution
 ## 其他博客程序
  - Hexo：https://github.com/nexmoe/hexo-theme-nexmoe
 
-## 许可证
-
-根据 Apache License 2.0 许可证开源。
-
 ## 后续更新
 star 以及 issue 是我更新的动力!
 欢迎加群 [482634342 轻惋漫社](https://jq.qq.com/?_wv=1027&k=5CfKHun) 划水
+
+## 讨论主题
+进主题讨论群：553184801
