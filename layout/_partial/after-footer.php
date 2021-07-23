@@ -5,4 +5,5 @@
 <?php endif; ?>
 <script src="<?php $this->options->themeUrl('source/js/app.js'); ?>"></script>
 <script src="<?php echo $this->options->lazysizes_js ?>"></script>
+<script src="<?php echo $this->options->tongji ?>"></script>
 <?php $this -> footer(); ?>

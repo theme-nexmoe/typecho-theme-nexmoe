@@ -1,4 +1,4 @@
-  <div class="nexmoe-widget-wrap">
+<div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title">文章分类</h3>
     <div class="nexmoe-widget">
         <ul class="category-list">
@@ -10,4 +10,4 @@
         <?php endwhile; ?>
         </ul>
     </div>
-  </div>
+</div>

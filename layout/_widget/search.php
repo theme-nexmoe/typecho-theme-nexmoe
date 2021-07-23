@@ -23,5 +23,7 @@ button, input, optgroup, select, textarea {
 <div class="nexmoe-widget-wrap">
 	<div class="nexmoe-widget nexmoe-search">
 	        <form class="search" method="post" action="./search" role="search">
-            <input type="search" placeholder="搜索" name="s" class="search-input" value="">
-            </form></div></div>
+                <input type="search" placeholder="搜索" name="s" class="search-input" value="">
+            </form>
+    </div>
+</div>

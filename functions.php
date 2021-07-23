@@ -9,9 +9,9 @@ function themeInit($archive) {
 }
 
 function themeConfig($form) {
-    $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl',NULL,"https://avatar.dawnlab.me/qq/776194970?s=0",'博客头像','在这里填入一个图片URL地址, 以在网站标题前加上一个LOGO<br>可使用QQ头像链接作为LOGO https://avatar.dawnlab.me/qq/（这里填QQ）');
+    $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl',NULL,"https://avatar.mixcm.com/github/nexmoe",'博客头像','在这里填入一个图片URL地址, 以在网站标题前加上一个LOGO<br>可使用QQ头像链接作为LOGO https://avatar.mixcm.com/qq/（这里填QQ）');
     $form->addInput ($logoUrl);
-    $background = new Typecho_Widget_Helper_Form_Element_Text('background',NULL,'https://nexmoe.com/images/5c3aec85a4343.jpg','博客默认封面图','在这里填入一个图片URL地址, 给博客添加一个默认封面图');
+    $background = new Typecho_Widget_Helper_Form_Element_Text('background',NULL,'https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/compress/5c3aec85a4343.jpg','博客默认封面图','在这里填入一个图片URL地址, 给博客添加一个默认封面图');
     $form->addInput ($background);
 
     $widget = new Typecho_Widget_Helper_Form_Element_Textarea('widget',NULL,'category,tagcloud,archive','侧边栏部件','侧边栏部件，用英文的 “,” 隔开，按先后排序，可选值 category,tagcloud,archive,social,search');
