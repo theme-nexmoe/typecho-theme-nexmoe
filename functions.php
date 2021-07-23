@@ -71,7 +71,7 @@ function themeConfig($form) {
     $highlight_js = new Typecho_Widget_Helper_Form_Element_Text('highlight_js',NULL,'https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js','CDN > highlight > JS',NULL);
     $form->addInput ($highlight_js);
 
-    $tongji = new Typecho_Widget_Helper_Form_Element_Textarea('tongji',NULL,'<script src="https://mixcm.com/core.js"></script>','统计代码','为你的网站添加统计代码');
+    $tongji = new Typecho_Widget_Helper_Form_Element_Textarea('tongji',NULL,'<script data-ad-client="ca-pub-2058306854838448" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>','统计代码','为你的网站添加统计代码');
     $form->addInput ($tongji);
 }
 
