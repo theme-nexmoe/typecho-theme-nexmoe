@@ -5,7 +5,7 @@
  * QQ群：482634342
  * @package Nexmoe
  * @author 折影轻梦
- * @version 1.0
+ * @version 1.1
  * @link https://nexmoe.com/
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
