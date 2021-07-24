@@ -71,8 +71,8 @@ function themeConfig($form) {
     $highlight_js = new Typecho_Widget_Helper_Form_Element_Text('highlight_js',NULL,'https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js','CDN > highlight > JS',NULL);
     $form->addInput ($highlight_js);
 
-    $tongji = new Typecho_Widget_Helper_Form_Element_Textarea('tongji',NULL,'<script data-ad-client="ca-pub-2058306854838448" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>','统计代码','为你的网站添加统计代码');
-    $form->addInput ($tongji);
+    $tongji=new Typecho_Widget_Helper_Form_Element_Textarea('tongji',NULL,'<script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?41b04999ee3d67f2acc9ce741045e68d";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script><script data-ad-client="ca-pub-2058306854838448" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>','统计代码','为你的网站添加统计代码');
+	$form->addInput ($tongji);
 }
 
 function themeFields($layout) {
