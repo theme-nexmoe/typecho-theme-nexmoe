@@ -11,8 +11,11 @@
 
 ## 演示
 
-- [安和Blog](https://lolicorn.com)
-- [依玖](https://kukiisama.top/)
+| 站点                                  | 状态                                                         |
+| ------------------------------------- | ------------------------------------------------------------ |
+| [折影轻梦](http://typecho.nexmoe.com/?theme=nexmoe)       | ![折影轻梦](https://img.shields.io/website?url=https://typecho.nexmoe.com/) |
+| [安和Blog](https://lolicorn.com) | ![安和Blog](https://img.shields.io/website?url=https://lolicorn.com)  |
+| [依玖](https://kukiisama.top/) | ![依玖](https://img.shields.io/website?url=https://kukiisama.top/)  |
 
 ## 后续更新
 star 以及 issue 是我更新的动力!
