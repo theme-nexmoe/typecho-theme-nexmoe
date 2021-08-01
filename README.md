@@ -1,7 +1,5 @@
 ![预览图](screenshot.png)
 
-> 一个移植 https://github.com/nexmoe/hexo-theme-nexmoe 的 typecho 主题
-
 ## 安装
 按照常规 Typecho 主题安装即可
 
