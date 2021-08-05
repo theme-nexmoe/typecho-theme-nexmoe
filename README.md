@@ -9,6 +9,8 @@
 
 ## 演示
 
+欢迎将你的网站提交到这里来 [点我提交演示站点](https://github.com/theme-nexmoe/typecho-theme-nexmoe/discussions/28) 或 [直接编辑（推荐）](https://github.com/theme-nexmoe/typecho-theme-nexmoe/edit/master/README.md)
+
 | 站点                                  | 状态                                                         |
 | ------------------------------------- | ------------------------------------------------------------ |
 | [折影轻梦](http://typecho.nexmoe.com/?theme=nexmoe)       | ![折影轻梦](https://img.shields.io/website?url=http://typecho.nexmoe.com/) |
