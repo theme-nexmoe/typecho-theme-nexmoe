@@ -7,6 +7,9 @@
 2. 移动到 /usr/themes/ 文件夹中
 3. 到后台启用主题
 
+## 友情链接使用方式
+仅供参考：https://docs.nexmoe.com/article/py#%E6%B7%BB%E5%8A%A0%E5%8F%8B%E9%93%BE
+
 ## 演示
 
 欢迎将你的网站提交到这里来 [点我提交演示站点](https://github.com/theme-nexmoe/typecho-theme-nexmoe/discussions/28) 或 [直接编辑（推荐）](https://github.com/theme-nexmoe/typecho-theme-nexmoe/edit/master/README.md)
