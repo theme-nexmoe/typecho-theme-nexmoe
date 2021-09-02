@@ -11,7 +11,7 @@
         <link rel="apple-touch-icon" href="<?php $this->options->logoUrl();?>">
         <link rel="stylesheet" href="<?php echo $this->options->mdui_css ?>">
 
-        <link rel="stylesheet" href="<?php $this->options->themeUrl('source/css/style.css'); ?>">
+        <link class="nexmoe-head-css" rel="stylesheet" href="<?php $this->options->themeUrl('source/css/style.css'); ?>">
         <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
         <?php $this->header('generator=&template=&pingback=&xmlrpc=&wlw=&commentReply=&rss1=&rss2=&atom='); ?>
     </head>
