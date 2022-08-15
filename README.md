@@ -17,9 +17,10 @@
 | 站点                                  | 状态                                                         |
 | ------------------------------------- | ------------------------------------------------------------ |
 | [折影轻梦](http://typecho.nexmoe.com/?theme=nexmoe)       | ![折影轻梦](https://img.shields.io/website?url=http://typecho.nexmoe.com/) |
-| [安和Blog](https://lolicorn.com) | ![安和Blog](https://img.shields.io/website?url=https://lolicorn.com)  |
+| [安和Blog](https://lolicorn.com) | ![安和Blog](https://img.shields.io/?url=https://lolicorn.com)  |
 | [依玖](https://kukiisama.top/) | ![依玖](https://img.shields.io/website?url=https://kukiisama.top/)  |
 | [铯唔的公开小窝](https://srv.pub/) | ![铯唔的公开小窝](https://img.shields.io/website?url=https://srv.pub/)  |
+| [Seimo博客](https://seimo.cn/) | ![Seimo博客](https://img.shields.io/website?url=https://seimo.cn/)  |
 
 ## 后续更新
 star 以及 issue 是我更新的动力!
